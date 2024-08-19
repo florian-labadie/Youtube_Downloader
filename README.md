@@ -64,9 +64,9 @@ Pour télécharger une liste de lecture complète, utilisez la même commande et
 
 ### Options
 
-a : Télécharger uniquement l'audio.
-v : Télécharger uniquement la vidéo.
-p : Télécharger toute la liste de lecture.
+- a : Télécharger uniquement l'audio.
+- v : Télécharger uniquement la vidéo.
+- p : Télécharger toute la liste de lecture.
 
 ## Fonctionnalités
 
