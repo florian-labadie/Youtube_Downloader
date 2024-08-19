@@ -27,19 +27,19 @@ Modules Python : pytube, tqdm
 1. Clonez le dépôt Git :
 
 ```bash
-    git clone git@github.com:florian-labadie/Youtube_Downloader.git
+git clone git@github.com:florian-labadie/Youtube_Downloader.git
 ```
 
 2. Accédez au répertoire du projet :
 
 ``` bash
-    cd Youtube_Downloader
+cd Youtube_Downloader
 ```
 
 3. Installez les dépendances nécessaires :
 
 ``` bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Utilisation
