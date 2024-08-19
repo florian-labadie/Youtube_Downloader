@@ -1,0 +1,55 @@
+# Fichiers et répertoires Python
+src/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+
+# Environnements virtuels
+venv/
+env/
+.env/
+venv.bak/
+env.bak/
+
+# Fichiers de configuration IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.temp
+
+# Compilations
+build/
+dist/
+*.egg-info/
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Dépendances
+*.egg
+*.egg-info
+
+# Fichiers sensibles
+*.env
+
+# Fichiers spécifiques aux éditeurs
+*.sublime-project
+*.sublime-workspace
+*.kate-swp
+
+# Autres
+*.DS_Store
+*.directory
