@@ -34,22 +34,9 @@ build/
 dist/
 *.egg-info/
 
-# Système d'exploitation
-.DS_Store
-Thumbs.db
-
 # Dépendances
 *.egg
 *.egg-info
 
 # Fichiers sensibles
 *.env
-
-# Fichiers spécifiques aux éditeurs
-*.sublime-project
-*.sublime-workspace
-*.kate-swp
-
-# Autres
-*.DS_Store
-*.directory
