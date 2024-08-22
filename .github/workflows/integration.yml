@@ -1,0 +1,25 @@
+name: Python CI
+
+on:
+  push:
+    branches-ignore: [ga-ignore-*]
+  pull_request:
+    branches-ignore: [ga-ignore-*]
+
+jobs:
+  compile-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GH repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compile check using Makefile
+        run: make run_CI/CD

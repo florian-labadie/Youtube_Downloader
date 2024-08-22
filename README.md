@@ -4,13 +4,14 @@ YouTube Media Downloader est un projet Python permettant de télécharger des vi
 
 ## Table des matières
 
-1. [Introduction]
-2. [Prérequis]
-3. [Installation]
-4. [Utilisation]
-5. [Fonctionnalités]
-6. [Structure du Projet]
-7. [Contributeurs]
+- [Introduction](#introduction)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Utilisation](#utilisation)
+- [Fonctionnalités](#fonctionnalités)
+- [Exemple](#exemple)
+- [Structure du Projet](#structure-du-projet)
+- [Contributeurs](#contributeurs)
 
 ## Introduction
 
@@ -20,7 +21,6 @@ YouTube Media Downloader permet aux utilisateurs de télécharger et de converti
 
 Python 3.7 ou version ultérieure
 Modules Python : pytube, tqdm
-(Optionnel) Environnement virtuel pour isoler les dépendances
 
 ## Installation
 
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 Pour télécharger une vidéo depuis YouTube, utilisez la commande suivante :
 
 ``` bash
-./download_ytb
+make run
 ```
 
 Suivez les instructions pour entrer l'URL de la vidéo et spécifier les options.
@@ -93,14 +93,18 @@ Le projet est organisé comme suit :
 
 ``` bash
 Youtube_Downloader/
-├── src/                        # Code source principal
+├── .github/workflows/             # Fichier github actions
+│   └── integration.yml               # CI/CD
+├── assets/             # Fichiers image
+│   └── image.png               # Pour README
+├── src/                # Code source principal
 │   ├── check_youtube_url.py    # Vérification des URLs YouTube
 │   ├── download_and_convert.py # Fonctionnalités de téléchargement et conversion
 │   ├── get_standard_path.py    # Gestion des chemins de répertoires
 │   ├── validate_output_path.py # Validation du chemins de répertoires données
 │   └── youtube_downloader.py   # Script principal pour l'interaction utilisateur
 ├── .gitignore  
-├── download_ytb        # Executable
+├── Makefile            # Executable
 ├── requirements.txt    # Dépendances Python
 ├── main.py             # Point d'entrée du script principal
 └── README.md           # Documentation du projet

@@ -4,7 +4,11 @@ from src.validate_output_path import validate_output_path
 
 MUSIC_PATH, MEDIA_PATH = get_standard_paths()
   
-def youtube_downloader(): 
+def youtube_downloader(non_interactive=False):
+    if non_interactive:
+        print("Running in non-interactive mode...")
+        return
+
     url = input("Enter the YouTube video URL: ").strip()
     choice = input("Do you want to download video or audio or playlist? (v/a/p): ").strip().lower()
 
