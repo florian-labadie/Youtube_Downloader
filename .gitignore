@@ -1,42 +1,29 @@
-# Fichiers et répertoires Python
+# Python Bytecode
 src/__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.pyc
-*.pyo
-*.pyd
 
-# Environnements virtuels
-venv/
-env/
-.env/
-venv.bak/
-env.bak/
-
-# Fichiers de configuration IDE
+# Configuration de l'IDE
 .vscode/
 .idea/
-*.suo
-*.ntvs_analysis.dat
-*.njsproj
-*.sln
-*.swp
-*.swo
 
-# Fichiers temporaires
+# Fichiers de logs
 *.log
+
+# Fichiers d'entrée
+input/
+
+# Fichiers temporaires et autres fichiers de cache
 *.tmp
 *.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.retry
+*.rej
+*.~*
 
-# Compilations
-build/
-dist/
-*.egg-info/
-
-# Dépendances
-*.egg
-*.egg-info
-
-# Fichiers sensibles
-*.env
+# Caches
+*.cache
+*.pycache
+__pycache__/
+*.sqlite3
