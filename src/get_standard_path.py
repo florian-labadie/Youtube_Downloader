@@ -8,7 +8,7 @@ def get_standard_paths():
     if system == "Windows":
         music_path = os.path.join(os.environ.get('USERPROFILE', home_dir), "Music")
         videos_path = os.path.join(os.environ.get('USERPROFILE', home_dir), "Videos")
-    else:  # For Unix-like (Linux, macOS)
+    else:  # For Linux
         music_path = os.path.join(home_dir, "Music")
         videos_path = os.path.join(home_dir, "Videos")
     

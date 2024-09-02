@@ -11,7 +11,7 @@ def download_media(url, output_path, audio_only=False):
     stream = yt.streams.filter(only_audio=audio_only).first() if audio_only else yt.streams.get_highest_resolution()
     total_size = stream.filesize
 
-    def progress_function(chunk, file_handle, bytes_remaining):
+    def progress_function(bytes_remaining):
         size = total_size - bytes_remaining
         pbar.update(size - pbar.n)
 
